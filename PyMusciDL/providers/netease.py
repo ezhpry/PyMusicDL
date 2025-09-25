@@ -1,8 +1,8 @@
 # providers/netease.py
 
-from pymusicdl.utils import api_handler
+from PyMusciDL.utils import api_handler
 from typing import Optional
-from pymusicdl.providers.base_provider import BaseProvider
+from PyMusciDL.providers.base_provider import BaseProvider
 
 class NeteaseProvider(BaseProvider):
 

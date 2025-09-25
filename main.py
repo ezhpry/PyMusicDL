@@ -1,6 +1,6 @@
 # main.py
 import argparse
-from pymusicdl.core import downloader, provider_factory
+from PyMusciDL.core import downloader, provider_factory
 
 
 def main():

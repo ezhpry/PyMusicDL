@@ -85,19 +85,24 @@
 ### **项目结构**
 
 ```
-.
-├── src/
-│   ├── main.py                    # 项目入口
-│   ├── core/
+PyMusicDL (根目录)
+├── .venv/                         # 虚拟环境 (Virtual Environment)
+├── PyMusicDL/                     # 核心代码包 (与项目同名)
+│   ├── config/                    # 配置相关
+│   ├── core/                      # 核心业务逻辑
 │   │   ├── downloader.py          # 下载模块，含进度条
 │   │   └── provider_factory.py    # 提供者工厂，用于动态选择音乐源
-│   ├── providers/
+│   ├── providers/                 # 音乐源实现
 │   │   ├── netease.py             # 网易云音乐接口实现
 │   │   └── tencent.py             # QQ音乐接口实现
-│   └── utils/
-│       └── api_handler.py         # 统一的 API 请求处理
-├── .gitignore
-├── README.md
-├── requirements.txt
-└── ...
+│   ├── utils/                     # 通用工具
+│   │   └── api_handler.py         # 统一的 API 请求处理
+│   ├── __init__.py                # 标识 PyMusicDL 为 Python 包
+│   ├── cli.py                     # 命令行接口 (CLI) 逻辑
+│   └── gui.py                     # 图形用户界面 (GUI) 逻辑
+├── tests/                         # 测试代码
+├── .gitignore                     # Git 忽略文件 (推荐)
+├── main.py                        # 项目主入口/启动脚本 (调用 PyMusicDL 包)
+├── README.md                      # 项目说明文件
+└── requirements.txt               # 依赖
 ```
