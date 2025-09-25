@@ -1,7 +1,7 @@
 # core/provider_factory.py
 
-from providers.netease import NeteaseProvider
-from providers.tencent import TencentProvider
+from pymusicdl.providers.netease import NeteaseProvider
+from pymusicdl.providers.tencent import TencentProvider
 from typing import Optional
 
 def get_provider(source: str) -> Optional[NeteaseProvider or TencentProvider]:

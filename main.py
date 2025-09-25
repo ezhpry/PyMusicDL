@@ -1,6 +1,7 @@
 # main.py
 import argparse
-from core import downloader, provider_factory
+from pymusicdl.core import downloader, provider_factory
+
 
 def main():
     parser = argparse.ArgumentParser(description="音乐下载")
